@@ -1,0 +1,1029 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='mac' version='18.1' xml:base='https://vizhub' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/newsfeed_analysis?rev=1.0' id='newsfeed_analysis' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='newsfeed_project_2' inline='true' name='federated.1siwtvy06bbyo01e23a7m0aizfqq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='newsfeed_project_2' name='textscan.1qiplim01ahcyw1f29lqw0nf5931'>
+            <connection class='textscan' directory='E:/Course Creation/Projects/Newsfeed Project/CSV' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1qiplim01ahcyw1f29lqw0nf5931' name='newsfeed_project_2.csv' table='[newsfeed_project_2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='visited_count' ordinal='0' />
+            <column datatype='integer' name='posted_count' ordinal='1' />
+            <column datatype='integer' name='liked_count' ordinal='2' />
+            <column datatype='integer' name='commented_count' ordinal='3' />
+            <column datatype='integer' name='active_users_count' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1qiplim01ahcyw1f29lqw0nf5931' name='newsfeed_project_2.csv' table='[newsfeed_project_2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='visited_count' ordinal='0' />
+            <column datatype='integer' name='posted_count' ordinal='1' />
+            <column datatype='integer' name='liked_count' ordinal='2' />
+            <column datatype='integer' name='commented_count' ordinal='3' />
+            <column datatype='integer' name='active_users_count' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[newsfeed_project_2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visited_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[visited_count]</local-name>
+            <parent-name>[newsfeed_project_2.csv]</parent-name>
+            <remote-alias>visited_count</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_2.csv_2183899ABC8C4B81B6133874ADFE56ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>posted_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[posted_count]</local-name>
+            <parent-name>[newsfeed_project_2.csv]</parent-name>
+            <remote-alias>posted_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_2.csv_2183899ABC8C4B81B6133874ADFE56ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>liked_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[liked_count]</local-name>
+            <parent-name>[newsfeed_project_2.csv]</parent-name>
+            <remote-alias>liked_count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_2.csv_2183899ABC8C4B81B6133874ADFE56ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commented_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[commented_count]</local-name>
+            <parent-name>[newsfeed_project_2.csv]</parent-name>
+            <remote-alias>commented_count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_2.csv_2183899ABC8C4B81B6133874ADFE56ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>active_users_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[active_users_count]</local-name>
+            <parent-name>[newsfeed_project_2.csv]</parent-name>
+            <remote-alias>active_users_count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_2.csv_2183899ABC8C4B81B6133874ADFE56ED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='newsfeed_project_2.csv' datatype='table' name='[__tableau_internal_object_id__].[newsfeed_project_2.csv_2183899ABC8C4B81B6133874ADFE56ED]' role='measure' type='quantitative' />
+      <column caption='Active Users Count' datatype='integer' name='[active_users_count]' role='measure' type='quantitative' />
+      <column caption='Commented Count' datatype='integer' name='[commented_count]' role='measure' type='quantitative' />
+      <column caption='Liked Count' datatype='integer' name='[liked_count]' role='measure' type='quantitative' />
+      <column caption='Posted Count' datatype='integer' name='[posted_count]' role='measure' type='quantitative' />
+      <column caption='Visited Count' datatype='integer' name='[visited_count]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='Data/TableauTemp/TEMP_0godfgc1e2feob14is1zr0v3gt90.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username=''>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>visited_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[visited_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>visited_count</remote-alias>
+              <ordinal>0</ordinal>
+              <family>newsfeed_project_2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>posted_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[posted_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>posted_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>newsfeed_project_2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>liked_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[liked_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>liked_count</remote-alias>
+              <ordinal>2</ordinal>
+              <family>newsfeed_project_2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>commented_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[commented_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>commented_count</remote-alias>
+              <ordinal>3</ordinal>
+              <family>newsfeed_project_2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>active_users_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[active_users_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>active_users_count</remote-alias>
+              <ordinal>4</ordinal>
+              <family>newsfeed_project_2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='newsfeed_project_2.csv' id='newsfeed_project_2.csv_2183899ABC8C4B81B6133874ADFE56ED'>
+            <properties context=''>
+              <relation connection='textscan.1qiplim01ahcyw1f29lqw0nf5931' name='newsfeed_project_2.csv' table='[newsfeed_project_2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='visited_count' ordinal='0' />
+                  <column datatype='integer' name='posted_count' ordinal='1' />
+                  <column datatype='integer' name='liked_count' ordinal='2' />
+                  <column datatype='integer' name='commented_count' ordinal='3' />
+                  <column datatype='integer' name='active_users_count' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='newsfeed_project_1' inline='true' name='federated.1u2n35i1xwz2qw16idjyf1kn14rl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='newsfeed_project_1' name='textscan.0ro309r159u0d11e15xdr05mvyki'>
+            <connection class='textscan' directory='E:/Course Creation/Projects/Newsfeed Project/CSV' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ro309r159u0d11e15xdr05mvyki' name='newsfeed_project_1.csv' table='[newsfeed_project_1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='post_date' ordinal='0' />
+            <column datatype='string' name='post_type' ordinal='1' />
+            <column datatype='string' name='post_subtype' ordinal='2' />
+            <column datatype='integer' name='number_of_posts' ordinal='3' />
+            <column datatype='integer' name='number_of_likes' ordinal='4' />
+            <column datatype='integer' name='number_of_comments' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ro309r159u0d11e15xdr05mvyki' name='newsfeed_project_1.csv' table='[newsfeed_project_1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='post_date' ordinal='0' />
+            <column datatype='string' name='post_type' ordinal='1' />
+            <column datatype='string' name='post_subtype' ordinal='2' />
+            <column datatype='integer' name='number_of_posts' ordinal='3' />
+            <column datatype='integer' name='number_of_likes' ordinal='4' />
+            <column datatype='integer' name='number_of_comments' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[newsfeed_project_1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>post_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[post_date]</local-name>
+            <parent-name>[newsfeed_project_1.csv]</parent-name>
+            <remote-alias>post_date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>post_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[post_type]</local-name>
+            <parent-name>[newsfeed_project_1.csv]</parent-name>
+            <remote-alias>post_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>post_subtype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[post_subtype]</local-name>
+            <parent-name>[newsfeed_project_1.csv]</parent-name>
+            <remote-alias>post_subtype</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_posts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_posts]</local-name>
+            <parent-name>[newsfeed_project_1.csv]</parent-name>
+            <remote-alias>number_of_posts</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_likes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_likes]</local-name>
+            <parent-name>[newsfeed_project_1.csv]</parent-name>
+            <remote-alias>number_of_likes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_comments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_comments]</local-name>
+            <parent-name>[newsfeed_project_1.csv]</parent-name>
+            <remote-alias>number_of_comments</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg Likes per Post' datatype='real' name='[Calculation_445926792400756736]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([number_of_likes])/SUM([number_of_posts])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='newsfeed_project_1.csv' datatype='table' name='[__tableau_internal_object_id__].[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]' role='measure' type='quantitative' />
+      <column caption='Number Of Comments' datatype='integer' name='[number_of_comments]' role='measure' type='quantitative' />
+      <column caption='Number Of Likes' datatype='integer' name='[number_of_likes]' role='measure' type='quantitative' />
+      <column caption='Number Of Posts' datatype='integer' name='[number_of_posts]' role='measure' type='quantitative' />
+      <column caption='Post Date' datatype='date' name='[post_date]' role='dimension' type='ordinal' />
+      <column caption='Post Subtype' datatype='string' name='[post_subtype]' role='dimension' type='nominal' />
+      <column caption='Post Type' datatype='string' name='[post_type]' role='dimension' type='nominal' />
+      <column-instance column='[post_subtype]' derivation='None' name='[none:post_subtype:nk]' pivot='key' type='nominal' />
+      <column-instance column='[number_of_posts]' derivation='Sum' name='[sum:number_of_posts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_445926792400756736]' derivation='User' name='[usr:Calculation_445926792400756736:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='Data/TableauTemp/TEMP_03me7570aeie8l12oalnq01i8wms.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>post_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[post_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>post_date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>newsfeed_project_1.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>151</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>post_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[post_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>post_type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>newsfeed_project_1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>post_subtype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[post_subtype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>post_subtype</remote-alias>
+              <ordinal>2</ordinal>
+              <family>newsfeed_project_1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_posts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_posts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_posts</remote-alias>
+              <ordinal>3</ordinal>
+              <family>newsfeed_project_1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>190</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_likes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_likes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_likes</remote-alias>
+              <ordinal>4</ordinal>
+              <family>newsfeed_project_1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_comments</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_comments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_comments</remote-alias>
+              <ordinal>5</ordinal>
+              <family>newsfeed_project_1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:post_subtype:nk]' type='palette'>
+            <map to='#29757a'>
+              <bucket>&quot;Level&quot;</bucket>
+            </map>
+            <map to='#339299'>
+              <bucket>&quot;Course Certificate&quot;</bucket>
+            </map>
+            <map to='#3dafb8'>
+              <bucket>&quot;Collection&quot;</bucket>
+            </map>
+            <map to='#545c69'>
+              <bucket>&quot;Text Post&quot;</bucket>
+            </map>
+            <map to='#56bfc7'>
+              <bucket>&quot;Streak&quot;</bucket>
+            </map>
+            <map to='#748190'>
+              <bucket>&quot;Career Track Certificate&quot;</bucket>
+            </map>
+            <map to='#8cdae3'>
+              <bucket>&quot;Goal&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#293343'>
+              <bucket>&quot;[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[sum:number_of_posts:qk]&quot;</bucket>
+            </map>
+            <map to='#4dafb8'>
+              <bucket>&quot;[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[usr:Calculation_984318057794015233:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[usr:Calculation_445926792400756736:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='newsfeed_project_1.csv' id='newsfeed_project_1.csv_98F2D6981661487AB51396E34B11EBB2'>
+            <properties context=''>
+              <relation connection='textscan.0ro309r159u0d11e15xdr05mvyki' name='newsfeed_project_1.csv' table='[newsfeed_project_1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='date' name='post_date' ordinal='0' />
+                  <column datatype='string' name='post_type' ordinal='1' />
+                  <column datatype='string' name='post_subtype' ordinal='2' />
+                  <column datatype='integer' name='number_of_posts' ordinal='3' />
+                  <column datatype='integer' name='number_of_likes' ordinal='4' />
+                  <column datatype='integer' name='number_of_comments' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Monthly Post Activity &amp; Average Likes
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/newsfeed_analysis/Sheet1?rev=' id='Sheet1' path='/workbooks/newsfeed_analysis' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='newsfeed_project_1' name='federated.1u2n35i1xwz2qw16idjyf1kn14rl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u2n35i1xwz2qw16idjyf1kn14rl'>
+            <column caption='Avg Likes per Post' datatype='real' name='[Calculation_445926792400756736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([number_of_likes])/SUM([number_of_posts])' />
+            </column>
+            <column-instance column='[post_date]' derivation='Month' name='[mn:post_date:ok]' pivot='key' type='ordinal' />
+            <column caption='Number Of Likes' datatype='integer' name='[number_of_likes]' role='measure' type='quantitative' />
+            <column caption='Number Of Posts' datatype='integer' name='[number_of_posts]' role='measure' type='quantitative' />
+            <column caption='Post Date' datatype='date' name='[post_date]' role='dimension' type='ordinal' />
+            <column-instance column='[number_of_posts]' derivation='Sum' name='[sum:number_of_posts:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_445926792400756736]' derivation='User' name='[usr:Calculation_445926792400756736:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[usr:Calculation_445926792400756736:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[usr:Calculation_445926792400756736:qk]' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[sum:number_of_posts:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[usr:Calculation_445926792400756736:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1u2n35i1xwz2qw16idjyf1kn14rl].[sum:number_of_posts:qk] + [federated.1u2n35i1xwz2qw16idjyf1kn14rl].[usr:Calculation_445926792400756736:qk])</rows>
+        <cols>[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[mn:post_date:ok]</cols>
+      </table>
+      <simple-id uuid='{E703CCFC-885F-407A-8531-E8292B89C747}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000c1f' fontname='Inter' fontsize='12'>Subtype Post Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='newsfeed_project_1' name='federated.1u2n35i1xwz2qw16idjyf1kn14rl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u2n35i1xwz2qw16idjyf1kn14rl'>
+            <column-instance column='[post_subtype]' derivation='None' name='[none:post_subtype:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Posts' datatype='integer' name='[number_of_posts]' role='measure' type='quantitative' />
+            <column caption='Post Subtype' datatype='string' name='[post_subtype]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_posts]' derivation='Sum' name='[sum:number_of_posts:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[none:post_subtype:nk]'>
+            <groupfilter function='level-members' level='[none:post_subtype:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[none:post_subtype:nk]' direction='DESC' using='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[sum:number_of_posts:qk]' />
+          <slices>
+            <column>[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[none:post_subtype:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[none:post_subtype:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[none:post_subtype:nk]</rows>
+        <cols>[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[sum:number_of_posts:qk]</cols>
+      </table>
+      <simple-id uuid='{D715FBE9-6562-46F1-856E-CA3D4C1227A2}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000c1f' fontname='Inter' fontsize='9'>Subtype Popularity Measured in Likes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='newsfeed_project_1' name='federated.1u2n35i1xwz2qw16idjyf1kn14rl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u2n35i1xwz2qw16idjyf1kn14rl'>
+            <column-instance column='[post_subtype]' derivation='None' name='[none:post_subtype:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Likes' datatype='integer' name='[number_of_likes]' role='measure' type='quantitative' />
+            <column caption='Post Subtype' datatype='string' name='[post_subtype]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_likes]' derivation='Sum' name='[sum:number_of_likes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[none:post_subtype:nk]' direction='DESC' using='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[sum:number_of_likes:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[none:post_subtype:nk]</rows>
+        <cols>[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[sum:number_of_likes:qk]</cols>
+      </table>
+      <simple-id uuid='{6B245EDF-435B-4D7C-8465-BFAE26ADAB73}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000c1f' fontname='Inter' fontsize='9'>Subtype Popularity Measured in Comments</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='newsfeed_project_1' name='federated.1u2n35i1xwz2qw16idjyf1kn14rl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u2n35i1xwz2qw16idjyf1kn14rl'>
+            <column-instance column='[post_subtype]' derivation='None' name='[none:post_subtype:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Comments' datatype='integer' name='[number_of_comments]' role='measure' type='quantitative' />
+            <column caption='Post Subtype' datatype='string' name='[post_subtype]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_comments]' derivation='Sum' name='[sum:number_of_comments:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[none:post_subtype:nk]' direction='DESC' using='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[sum:number_of_comments:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[none:post_subtype:nk]</rows>
+        <cols>[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[sum:number_of_comments:qk]</cols>
+      </table>
+      <simple-id uuid='{97FF1267-C873-4D1C-AA6B-21F7028FF9C8}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Newsfeed User Engagement</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='newsfeed_project_2' name='federated.1siwtvy06bbyo01e23a7m0aizfqq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1siwtvy06bbyo01e23a7m0aizfqq'>
+            <column caption='Active Users Count' datatype='integer' name='[active_users_count]' role='measure' type='quantitative' />
+            <column caption='Commented Count' datatype='integer' name='[commented_count]' role='measure' type='quantitative' />
+            <column caption='Liked Count' datatype='integer' name='[liked_count]' role='measure' type='quantitative' />
+            <column caption='Posted Count' datatype='integer' name='[posted_count]' role='measure' type='quantitative' />
+            <column-instance column='[active_users_count]' derivation='Sum' name='[sum:active_users_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[commented_count]' derivation='Sum' name='[sum:commented_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[liked_count]' derivation='Sum' name='[sum:liked_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[posted_count]' derivation='Sum' name='[sum:posted_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[visited_count]' derivation='Sum' name='[sum:visited_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Visited Count' datatype='integer' name='[visited_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1siwtvy06bbyo01e23a7m0aizfqq].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1siwtvy06bbyo01e23a7m0aizfqq].[sum:active_users_count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1siwtvy06bbyo01e23a7m0aizfqq].[sum:commented_count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1siwtvy06bbyo01e23a7m0aizfqq].[sum:liked_count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1siwtvy06bbyo01e23a7m0aizfqq].[sum:posted_count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1siwtvy06bbyo01e23a7m0aizfqq].[sum:visited_count:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <natural-sort column='[federated.1siwtvy06bbyo01e23a7m0aizfqq].[:Measure Names]' direction='ASC' />
+          <slices>
+            <column>[federated.1siwtvy06bbyo01e23a7m0aizfqq].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1siwtvy06bbyo01e23a7m0aizfqq].[:Measure Names]</rows>
+        <cols>[federated.1siwtvy06bbyo01e23a7m0aizfqq].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{E4C3B76C-B53D-438E-8E79-86A4500E9EA0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000c1f' fontname='Inter' fontsize='9'>Newsfeed Analysis Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='1000' maxwidth='1200' minheight='1000' minwidth='1200' sizing-mode='range' />
+      <datasources>
+        <datasource caption='newsfeed_project_2' name='federated.1siwtvy06bbyo01e23a7m0aizfqq' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1siwtvy06bbyo01e23a7m0aizfqq' />
+      <zones>
+        <zone h='100000' id='5' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98400' id='17' param='vert' type-v2='layout-flow' w='98666' x='667' y='800'>
+            <zone h='2300' id='18' type-v2='title' w='98666' x='667' y='800'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='96100' id='8' param='horz' type-v2='layout-flow' w='98666' x='667' y='3100'>
+              <zone h='96100' id='6' type-v2='layout-basic' w='98666' x='667' y='3100'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='background-color' value='#e6ecf0' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='28700' id='9' name='Sheet 1' w='39500' x='4600' y='7600' />
+        <zone h='5500' id='10' name='Sheet 1' pane-specification-id='6' param='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[:Measure Names]' type-v2='color' w='13200' x='85300' y='29300' />
+        <zone h='27500' id='11' name='Sheet 5' w='38400' x='44900' y='7500' />
+        <zone h='15700' id='12' name='Sheet 5' param='[federated.1siwtvy06bbyo01e23a7m0aizfqq].[:Measure Names]' type-v2='filter' w='13500' x='85100' y='12300' />
+        <zone h='30300' id='13' name='Sheet 2' w='34500' x='2833' y='40400' />
+        <zone h='25600' id='14' name='Sheet 3' w='28500' x='39833' y='40900' />
+        <zone h='25600' id='15' name='Sheet 4' w='26083' x='71917' y='41200' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EB616F20-BCA2-4FDD-81CD-97A3D14C2531}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='144'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='6' param='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{669BA200-4F7E-4C69-9C74-356021C906F1}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[none:post_subtype:nk]' type='filter' />
+            <card param='[federated.1u2n35i1xwz2qw16idjyf1kn14rl].[none:post_subtype:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4E61AAF6-81EB-4FF3-B8D8-74AF6489EDE8}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{764075C7-7D7C-45F5-AB78-D8C41907795C}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{56C757B1-B6D3-402E-835F-06714578644F}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1siwtvy06bbyo01e23a7m0aizfqq].[:Measure Names]' show-morefewerbutton='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C8F5041D-F35D-45FD-8EC6-B75BC4954F0C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4' />
+        <viewpoint name='Sheet 5' />
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{A2ADD539-8FD7-466C-9178-4F25E8D5498F}' />
+    </window>
+  </windows>
+</workbook>
