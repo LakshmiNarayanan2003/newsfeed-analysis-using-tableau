@@ -30,6 +30,7 @@ In this project, we’ll tackle a real-world case optimizing a website’s newsf
 
 ## Screenshots of Dashboard
 <img src="Dashboard/dashboard1.png">
+<img src="Dashboard/dashboard2.png">
 
 I have attached the Tableau file (newsfeed_analysis.twbx) that contains all the visualizations.
 
