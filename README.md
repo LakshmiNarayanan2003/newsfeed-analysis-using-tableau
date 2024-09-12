@@ -25,6 +25,7 @@ In this project, we’ll tackle a real-world case optimizing a website’s newsf
   2. On average, 38% of users have interacted with the **Comment Feature**.
     
 - **Given your observations, what recommendations can you offer to enhance user interaction with the newsfeed? (Consider acting on subtypes that frequently appear even though they don't particularly captivate the users.)**
+
   With the dashboard, we can see that almost half of people who like do not comment on the newsfeed/post. In order to increase it, once the user likes the post, we can redirect them to the comment section with the pre-defined "Congrats", "Kudos". This might increase the user interaction within the newsfeed.
 
 
