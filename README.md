@@ -21,8 +21,8 @@ In this project, we’ll tackle a real-world case optimizing a website’s newsf
   
 - **What percentage of visitors to the newsfeed actively interacted with the feature?**
 
-  1. On average, 76% of users have interacted with the **Like Feature**.
-  2. On average, 38% of users have interacted with the **Comment Feature**.
+  1. On average, 50% of users have interacted with the **Like Feature**.
+  2. On average, 12.5% of users have interacted with the **Comment Feature**.
     
 - **Given your observations, what recommendations can you offer to enhance user interaction with the newsfeed? (Consider acting on subtypes that frequently appear even though they don't particularly captivate the users.)**
 
